@@ -33,3 +33,16 @@ git add --all
 git commit -m 'initial commit'
 git push -u origin main
 ```
+
+## (Optional Reminder: Create a virtual env with virtualenv)
+
+```
+//install virtualenv with pip
+pip install virtualenv
+
+//create virtualenv in current project folder
+virtualenv {envName}
+
+//activate virtualenv
+source {envName}/bin/activate
+```

@@ -27,7 +27,7 @@ gh repo create yourOrganizationName/yourProjectName --private
 ## Pushing your local project on github
 
 ```
-git remote add origin https://github.com/yourUsername}/yourProjectName.git
+git remote add origin https://github.com/yourUsername/yourProjectName.git
 git branch -M main
 git add --all
 git commit -m 'initial commit'

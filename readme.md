@@ -35,14 +35,15 @@ git push -u origin main
 ```
 
 ## (Optional Reminder: Create a virtual env with virtualenv)
+```bash
 
-```
-//install virtualenv with pip
+#(OPTIONAL)install virtualenv with pip
 pip install virtualenv
 
-//create virtualenv in current project folder
-virtualenv {envName}
+#(OPTIONAL)create virtualenv in current project folder
+virtualenv yourEnvName
 
-//activate virtualenv
-source {envName}/bin/activate
+#(OPTIONAL)activate virtualenv
+#you have to reactivate everytime you open a new terminal window
+source yourEnvName/bin/activate
 ```

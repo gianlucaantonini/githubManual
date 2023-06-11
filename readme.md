@@ -12,6 +12,20 @@ git init
 touch .gitignore
 ```
 
+## (optional)Creating a Svelte project with Bootstrap & SCSS
+First make sure you have node and npm installed
+
+```
+node -v
+npm -v
+npm create svelte@latest yourProjectName
+cd yourProjectName
+npm install bootstrap
+npx svelte-add@latest scss
+npm install
+```
+
+
 ## Creating a Repository on github
 
 ```

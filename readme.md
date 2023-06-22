@@ -25,6 +25,60 @@ npx svelte-add@latest scss
 npm install
 ```
 
+## (optional)Install static adapter
+```
+npm i -D @sveltejs/adapter-static
+```
+modify your svelte.config.js with:
+```
+import adapter from '@sveltejs/adapter-static';
+
+export default {
+    kit: {
+        adapter: adapter({
+            // default options are shown. On some platforms
+            // these options are set automatically — see below
+            pages: 'public',
+            assets: 'public',
+            fallback: undefined,
+            precompress: false,
+            strict: true
+        })
+    }
+};
+```
+create src/routes/+layout.js file and add this code:
+```
+// This can be false if you're using a fallback (i.e. SPA mode)
+export const prerender = true;
+```
+
+## (optional)Install nprogress
+```
+npm install nprogress
+```
+Add this code to +layout.svelte:
+```
+  import {navigating} from '$app/stores'
+
+  // NProgress css
+  import 'nprogress/nprogress.css'
+
+  NProgress.configure({
+      // Full list: https://github.com/rstacruz/nprogress#configuration
+      minimum: 0.1,
+  })
+
+  $: {
+    if ($navigating) {
+      NProgress.start();
+    }
+    if (!$navigating) {
+      NProgress.done();
+    }
+  }
+```
+
 
 ## Creating a Repository on github
 

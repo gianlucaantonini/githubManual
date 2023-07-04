@@ -59,6 +59,7 @@ pnpm install nprogress
 ```
 Add this code to +layout.svelte:
 ```
+  import NProgress from 'nprogress'
   import {navigating} from '$app/stores'
 
   // NProgress css

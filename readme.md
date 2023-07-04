@@ -17,17 +17,17 @@ First make sure you have node and npm installed
 
 ```
 node -v
-npm -v
-npm create svelte@latest yourProjectName
+pnpm -v
+pnpm create svelte@latest yourProjectName
 cd yourProjectName
-npm install bootstrap
-npx svelte-add@latest scss
-npm install
+pnpm install bootstrap
+pnpm dlx svelte-add@latest scss
+pnpm install
 ```
 
 ## (optional)Install static adapter
 ```
-npm i -D @sveltejs/adapter-static
+pnpm i -D @sveltejs/adapter-static
 ```
 modify your svelte.config.js with:
 ```
@@ -55,7 +55,7 @@ export const prerender = true;
 
 ## (optional)Install nprogress
 ```
-npm install nprogress
+pnpm install nprogress
 ```
 Add this code to +layout.svelte:
 ```
